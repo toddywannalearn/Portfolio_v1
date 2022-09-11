@@ -1,1 +1,14 @@
 /* You can add global styles to this file, and also import other style files */
+
+@font-face {
+    font-family: "DM Serif Display";
+    src: url(./assets/fonts/DM_Serif_Display/DMSerifDisplay-Regular.ttf) format("ttf");
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
+  }

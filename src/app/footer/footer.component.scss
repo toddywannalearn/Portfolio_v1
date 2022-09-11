@@ -1,0 +1,120 @@
+
+$footer_background_color: #404040;
+$primary_purple_color: linear-gradient(to right, #FF03D7, #7C198C);
+$gray10: #2E2E2E;
+$gray1: #ABABAB;
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer {
+    width: 1440px;
+    height: 337px;
+    padding-left: 91px;
+    padding-right: 91px;
+    background-color: $footer_background_color;
+}
+
+.footer__logo {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: 'DM Serif Display', serif;
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration-line: underline;
+    color: $gray10;
+    opacity: 0.9;
+}
+
+.footer-content {
+    @extend .row;
+    width: 100%;
+    justify-content: space-evenly;
+    position: relative;
+    top: 77px;
+}
+
+a {
+    font-family: 'DM Serif Display', serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;
+    line-height: 44px;
+    height: 48px;
+    color: $gray1;
+    text-decoration: none;
+    background-image: $primary_purple_color;
+    background-repeat: no-repeat;
+    background-position: 0 1.35em;
+    background-size: 173px 2px;
+}
+
+a:hover {
+    color: #2E2E2E;
+    background-image: linear-gradient(to right, #7C198C, #FF03D7);
+}
+
+.footer-content__link--experiences {
+    background-size: 173px 2px;
+}
+
+.footer-content__link--projects {
+    background-size: 114px 2px;
+}
+
+.footer-content__link--contact {
+    background-size: 110px 2px;
+}
+
+.footer-content__info {
+    @extend .row;
+    justify-content: start;
+    align-items: center;
+    height: 26px;
+    padding-top: 17px;
+
+    p {
+        list-style: none;
+        font-size: 20px;
+        line-height: 26.4px;
+        font-family: 'Quicksand', sans-serif;
+        color: #ABABAB;
+        font-weight: 500;
+        padding-left: 6px;
+    }
+
+    .material-symbols-outlined {
+        color: $gray10;
+    }
+}
+
+button {
+    border: none;
+    background-color: transparent;
+} 
+
+svg {
+    width: 34px;
+    height: 34px;
+    stroke: none;
+    fill: $gray10;
+}
+
+svg:hover {
+    fill: $gray1;
+}
+
+
+
+
+
+
+
