@@ -1,4 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+$footer_background_color: #404040;
+$primary_purple_color: linear-gradient(to right, #FF03D7, #7C198C);
+$gray10: #2E2E2E;
+$gray1: #ABABAB;
 
 @font-face {
     font-family: "DM Serif Display";
@@ -12,3 +16,13 @@
     'GRAD' 0,
     'opsz' 48
   }
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}

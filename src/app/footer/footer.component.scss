@@ -1,120 +1,139 @@
+$footer-background-color: #404040;
+$highlight-color-purple1: linear-gradient(to right, #ff03d7, #7c198c);
+$color-gray1: #ababab;
+$color-gray10: #2e2e2e;
+$title-font-family: 'DM Serif Display', serif;
+$content-font-family: 'Quicksand', sans-serif;
 
-$footer_background_color: #404040;
-$primary_purple_color: linear-gradient(to right, #FF03D7, #7C198C);
-$gray10: #2E2E2E;
-$gray1: #ABABAB;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 .row {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .column {
+  display: flex;
+  flex-direction: column;
+}
+
+.column-logo {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    height: auto;
 }
 
 .footer {
-    width: 1440px;
-    height: 337px;
-    padding-left: 91px;
-    padding-right: 91px;
-    background-color: $footer_background_color;
+  max-width: 1440px;
+  width: 100%;
+  max-height: auto;
+  height: 90%;
+  padding-left: 91px;
+  padding-right: 91px;
+  padding-bottom: 76px;
+  padding-top: 76px;
+  background-color: $footer-background-color;
+  display: flex;
 }
 
+
 .footer__logo {
-    display: inline-block;
-    vertical-align: middle;
-    font-family: 'DM Serif Display', serif;
-    font-size: 96px;
-    font-style: normal;
-    font-weight: 400;
-    text-decoration-line: underline;
-    color: $gray10;
-    opacity: 0.9;
+  font-family: $title-font-family;
+  font-size: 96px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration-line: underline;
+  color: $color-gray10;
+  opacity: 0.9;
+  align-self: center;
 }
 
 .footer-content {
-    @extend .row;
-    width: 100%;
-    justify-content: space-evenly;
-    position: relative;
-    top: 77px;
+  @extend .row;
+  gap: 125px;
+  margin-left: 187px;
+  flex-wrap: wrap;
 }
 
-a {
-    font-family: 'DM Serif Display', serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 32px;
-    line-height: 44px;
-    height: 48px;
-    color: $gray1;
-    text-decoration: none;
-    background-image: $primary_purple_color;
-    background-repeat: no-repeat;
-    background-position: 0 1.35em;
-    background-size: 173px 2px;
+.footer-content a {
+  font-family: $title-font-family;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 32px;
+  line-height: 44px;
+  height: 48px;
+  color: $color-gray1;
+  text-decoration: none;
+  background-image: $highlight-color-purple1;
+  background-repeat: no-repeat;
+  background-position: 0 1.35em;
+  background-size: 173px 2px;
 }
 
-a:hover {
-    color: #2E2E2E;
-    background-image: linear-gradient(to right, #7C198C, #FF03D7);
+.footer-content a:hover {
+  color: $color-gray10;
+  background-image: linear-gradient(to right, #7c198c, #ff03d7);
 }
 
 .footer-content__link--experiences {
-    background-size: 173px 2px;
+  background-size: 173px 2px;
 }
 
 .footer-content__link--projects {
-    background-size: 114px 2px;
+  background-size: 114px 2px;
 }
 
 .footer-content__link--contact {
-    background-size: 110px 2px;
+  background-size: 110px 2px;
 }
 
-.footer-content__info {
-    @extend .row;
-    justify-content: start;
-    align-items: center;
-    height: 26px;
-    padding-top: 17px;
-
-    p {
-        list-style: none;
-        font-size: 20px;
-        line-height: 26.4px;
-        font-family: 'Quicksand', sans-serif;
-        color: #ABABAB;
-        font-weight: 500;
-        padding-left: 6px;
-    }
-
-    .material-symbols-outlined {
-        color: $gray10;
-    }
+.footer-content__contacts {
+  @extend .row;
+  align-items: center;
+  height: max-content;
+  margin-top: 17px;
 }
 
-button {
+.footer-content__contacts--info {
+  @extend .footer-content__contacts;
+  gap: 6px;
+
+  p {
+    list-style: none;
+    font-size: 20px;
+    line-height: 26.4px;
+    font-family: $content-font-family;
+    color: $color-gray1;
+    font-weight: 500;
+  }
+
+  .material-symbols-outlined {
+    color: $color-gray10;
+  }
+}
+
+.footer-content__contacts--icons {
+  @extend .footer-content__contacts;
+  gap: 17px;
+
+  button {
     border: none;
     background-color: transparent;
-} 
+  }
 
-svg {
+  svg {
     width: 34px;
     height: 34px;
     stroke: none;
-    fill: $gray10;
+    fill: $color-gray10;
+  }
+
+  svg:hover {
+    fill: $color-gray1;
+  }
 }
-
-svg:hover {
-    fill: $gray1;
-}
-
-
-
-
-
-
-
