@@ -21,15 +21,8 @@ $content-font-family: 'Quicksand', sans-serif;
   flex-direction: column;
 }
 
-.column-logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: auto;
-}
-
 .footer {
-  max-width: 1440px;
+  max-width: max;
   width: 100%;
   max-height: auto;
   height: 90%;
@@ -41,6 +34,12 @@ $content-font-family: 'Quicksand', sans-serif;
   display: flex;
 }
 
+.column-logo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+}
 
 .footer__logo {
   font-family: $title-font-family;
