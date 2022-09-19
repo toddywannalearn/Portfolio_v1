@@ -1,6 +1,110 @@
+$footer-background-color: #404040;
+$highlight-color-purple1: linear-gradient(to right, #ff03d7, #7c198c);
+$color-gray1: #ababab;
+$color-gray4: #CCCCCC;
+$color-gray9: #404040;
+$color-gray10: #2e2e2e;
+$title-font-family: 'DM Serif Display', serif;
+$content-font-family: 'Quicksand', sans-serif;  
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    //border: 1px solid blue;
+}
+
 .header {
-    width: 1440px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto 40px;
+}
+
+.header__content {
+    max-width: max;
+    width: 100%;
     height: 66px;
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 27px;
+}
+
+.divider {
+    display: flex;
+    width: 100%;
+    height: 2px;
+    background-color: $color-gray4;
+}
+
+.header__menu {
+    display: flex;
+    align-items: center;
+    gap: 27px;
+   // width: 45%;
+    flex: 1;
+
+    a {
+        font-family: $title-font-family;
+        color: $color-gray9;
+        font-weight: 400;
+        line-height: 27.42px;
+        font-size: 20px;
+
+        &:hover {
+            color: $color-gray1;
+        }
+    }
+
+    .material-symbols-outlined {
+        background-clip: text;
+        background-image: $highlight-color-purple1;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+.logo {
+    font-family: $title-font-family;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 41px;
+    text-decoration-line: underline;
+    background-clip: text;
+    background-image: $highlight-color-purple1;
+    -webkit-text-fill-color: transparent;
+    align-self: top;
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+.header__icons-btn {
+    display: flex;
+    gap: 17px;
+    //width: 45%;
+    justify-content: flex-end;
+    flex: 1;
+
+    button {
+        border: none;
+        background-color: transparent;
+      }
+    
+      svg {
+        width: 34px;
+        height: 34px;
+        stroke: none;
+        fill: $color-gray9;
+      }
+    
+      svg:hover {
+        fill: $color-gray1;
+      }
 }
 
 .row {

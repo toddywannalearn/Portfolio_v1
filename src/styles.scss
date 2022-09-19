@@ -17,12 +17,8 @@ $gray1: #ABABAB;
     'opsz' 48
   }
 
-.row {
-    display: flex;
-    flex-direction: row;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-}
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
