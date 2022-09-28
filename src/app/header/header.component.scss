@@ -1,11 +1,5 @@
-$footer-background-color: #404040;
-$highlight-color-purple1: linear-gradient(to right, #ff03d7, #7c198c);
-$color-gray1: #ababab;
-$color-gray4: #CCCCCC;
-$color-gray9: #404040;
-$color-gray10: #2e2e2e;
-$title-font-family: 'DM Serif Display', serif;
-$content-font-family: 'Quicksand', sans-serif;  
+@import 'src/variables';
+
 
 * {
     margin: 0;
@@ -65,6 +59,16 @@ nav ul {
         background-clip: text;
         background-image: $highlight-color-purple1;
         -webkit-text-fill-color: transparent;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &:active {
+           background-clip: text;
+           background-image: linear-gradient(to right, $color-gray8, $color-gray8);
+           -webkit-text-fill-color: transparent;
+        }
     }
 }
 
@@ -100,11 +104,16 @@ nav ul {
         height: 34px;
         stroke: none;
         fill: $color-gray9;
+
+        &:hover {
+            cursor: pointer;
+          }
+        
+          &:active {
+            fill: $color-gray8;
+          }
       }
     
-      svg:hover {
-        fill: $color-gray1;
-      }
 }
 
 .row {
