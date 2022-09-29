@@ -1,9 +1,6 @@
+@import 'src/variables';
+
 $footer-background-color: #404040;
-$highlight-color-purple1: linear-gradient(to right, #ff03d7, #7c198c);
-$color-gray1: #ababab;
-$color-gray10: #2e2e2e;
-$title-font-family: 'DM Serif Display', serif;
-$content-font-family: 'Quicksand', sans-serif;
 
 * {
   margin: 0;
@@ -130,9 +127,14 @@ $content-font-family: 'Quicksand', sans-serif;
     height: 34px;
     stroke: none;
     fill: $color-gray10;
-  }
 
-  svg:hover {
-    fill: $color-gray1;
+    &:hover {
+      cursor: pointer;
+    }
+  
+    &:active {
+      fill: $color-gray8;
+    }
   }
+  
 }
