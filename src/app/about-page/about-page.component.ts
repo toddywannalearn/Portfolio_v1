@@ -5,11 +5,14 @@ import { Component, OnInit } from '@angular/core';
   templateUrl: './about-page.component.html',
   styleUrls: ['./about-page.component.scss']
 })
-export class AboutPageComponent implements OnInit {
+export class AboutPageComponent {
+
+
+  resume: string = 'https://1drv.ms/b/s!Ajq9nGGWdND_gc0XAIYv-5qqzQ7S2Q?e=Wj6iuQ';
 
   constructor() { }
-
-  ngOnInit(): void {
+  
+  openResume() {
+    window.open(this.resume);
   }
-
 }
