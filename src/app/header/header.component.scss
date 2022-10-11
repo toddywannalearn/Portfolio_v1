@@ -33,7 +33,7 @@ nav ul {
     display: flex;
     width: 100%;
     height: 2px;
-    background-color: $color-gray4;
+    background-color: $color-gray04;
 }
 
 .header__menu {
@@ -45,13 +45,13 @@ nav ul {
 
     a {
         font-family: $title-font-family;
-        color: $color-gray9;
+        color: $color-gray09;
         font-weight: 400;
         line-height: 27.42px;
         font-size: 20px;
 
         &:hover {
-            color: $color-gray1;
+            color: $color-gray05;
         }
     }
 
@@ -66,7 +66,7 @@ nav ul {
 
         &:active {
            background-clip: text;
-           background-image: linear-gradient(to right, $color-gray8, $color-gray8);
+           background-image: linear-gradient(to right, $color-gray08, $color-gray08);
            -webkit-text-fill-color: transparent;
         }
     }
@@ -103,14 +103,14 @@ nav ul {
         width: 34px;
         height: 34px;
         stroke: none;
-        fill: $color-gray9;
+        fill: $color-gray09;
 
         &:hover {
             cursor: pointer;
           }
         
           &:active {
-            fill: $color-gray8;
+            fill: $color-gray08;
           }
       }
     

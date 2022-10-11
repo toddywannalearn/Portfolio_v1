@@ -1,0 +1,106 @@
+@import "src/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+article {
+  padding: 40px;
+}
+
+header {
+  @extend .row;
+
+  h1 {
+    max-width: 488px;
+    font-family: $title-font-family;
+    font-weight: 400;
+    font-size: 120px;
+    font-style: normal;
+    line-height: 165px;
+    color: $color-gray08;
+
+    span {
+      background-clip: text;
+      background-image: $highlight-color-purple1;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  p {
+    max-width: 465px;
+  }
+
+  svg {
+    flex: 2;
+    margin-top: 50px;
+  }
+}
+
+p {
+  max-width: 382px;
+  font-family: $content-font-family;
+  font-weight: 400;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 31.68px;
+  color: #000000;
+}
+
+.list-intro {
+    margin-bottom: 122px
+}
+
+
+.list-back {
+    background-color: $color-gray10;
+    width: max-content;
+    height: 1240px;
+    margin-left: 60px;
+    border-radius: 5px;
+}
+
+.projects-list {
+    @extend .column;
+    gap: 26px;
+    position: relative;
+    left: -60px;
+    top: -40px;
+    list-style-type: none;
+
+    li{
+      animation: fromRightToLeft 0.7s 0.2s backwards;
+    }
+
+   
+}
+
+@for $i from 1 through 5 {
+  .projects-list li:nth-child(#{$i}) {
+    animation-delay: 0.5s * $i;
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes fromRightToLeft {
+  from {
+    opacity: 0;
+    transform: translate(250px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
