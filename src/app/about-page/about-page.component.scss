@@ -53,7 +53,7 @@ header {
     max-width: 738px;
 
     h3, p {
-        color: $color-gray4;
+        color: $color-gray04;
     }
 }
 
@@ -63,7 +63,7 @@ header {
     
     h3 {
         align-self: center;
-        color: $color-gray4;
+        color: $color-gray04;
     }
 
     ul {
@@ -78,7 +78,7 @@ header {
 
     p {
         max-width: 460px;
-        color: $color-gray4;
+        color: $color-gray04;
     }
 
     .hobbies__img {
@@ -104,7 +104,7 @@ header {
     margin-top: 50px;
 
     p {
-        color: $color-gray4;
+        color: $color-gray04;
         max-height: 155px;
     }
 
@@ -115,7 +115,7 @@ header {
         height: 57px;
         
         background-color: transparent;
-        color: $color-gray4;
+        color: $color-gray04;
         font-family: $content-font-family;
         font-size: 24px;
         font-weight: 400;
@@ -123,12 +123,12 @@ header {
         border-radius: 3px;
 
         &:hover {
-           // background-color: $color-gray8;
+           // background-color: $color-gray08;
             cursor: pointer;
         }
 
         &:active {
-            background-color: $color-gray8;
+            background-color: $color-gray08;
         }
     }
 }
@@ -140,7 +140,7 @@ h1 {
     font-weight: 400;
     font-size: 120px;
     line-height: 165px;
-    color: $color-gray8;
+    color: $color-gray08;
     height: 137px;
 
     span {
@@ -155,7 +155,7 @@ h2 {
     font-weight: 400;
     font-size: 40px;
     line-height: 55px;
-    color: $color-gray6;
+    color: $color-gray06;
 }
 
 h3 {
@@ -182,7 +182,7 @@ p {
     font-weight: 400;
     font-size: 128px;
     line-height: 175px;
-    color: $color-gray8;
+    color: $color-gray08;
     width: 335px;
 
     span {
