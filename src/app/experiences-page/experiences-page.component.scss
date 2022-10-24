@@ -47,14 +47,6 @@ p {
   margin-top: 132px;
   position: relative;
 
-//   &::after {
-//     content: "";
-//     position: absolute;
-//     width: 18px;
-//     height: 2px;
-//     background: $color-gray08;
-//     left: 138px;
-//   }
 }
 
 .job {
@@ -72,7 +64,7 @@ p {
   font-size: 16px;
   line-height: 21.12px;
   font-weight: 500;
-  max-width: 140px;
+  width: 140px;
   position: relative;
   margin-right: 14px;
   top: 35px;
@@ -93,6 +85,7 @@ p {
   max-width: 793px;
   border-left: 2px solid $color-gray08;
   padding-left: 37px;
+  padding-bottom: 54px;
 
   .job__title-backgroud {
     width: 100%;
