@@ -22,11 +22,12 @@ header {
     line-height: 165px;
     color: $color-gray08;
 
-    span {
+    &::after {
+      content: ".";
       background-clip: text;
       background-image: $highlight-color-purple1;
       -webkit-text-fill-color: transparent;
-    }
+  }
   }
 
   p {
