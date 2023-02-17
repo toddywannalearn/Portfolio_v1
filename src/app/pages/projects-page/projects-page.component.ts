@@ -1,6 +1,8 @@
 
 import { AfterViewInit, Component, OnInit } from '@angular/core';
-import { IRepository, ProjectsService } from '../services/projects.service';
+import { IRepository, ProjectsService } from 'src/app/shared/services/projects/projects.service';
+
+
 
 @Component({
   selector: 'app-projects-page',

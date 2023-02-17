@@ -1,32 +1,30 @@
+import { ExperiencesPageModule } from './pages/experiences-page/experiences-page.module';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './home/home.component';
-import { FooterComponent } from './footer/footer.component';
-import { HeaderComponent } from './header/header.component';
-import { AboutPageComponent } from './about-page/about-page.component';
-import { ProjectsPageComponent } from './projects-page/projects-page.component';
-import { ProjectCardComponent } from './projects-page/project-card/project-card.component';
-import { ExperiencesPageComponent } from './experiences-page/experiences-page.component';
+import { HttpClientModule } from '@angular/common/http';
+import { AboutPageModule } from './pages/about-page/about-page.module';
+import { HomeModule } from './pages/home/home.module';
+import { ProjectsPageModule } from './pages/projects-page/projects-page.module';
+import { HeaderModule } from './pages/header/header.module';
+import { FooterModule } from './pages/footer/footer.module';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomeComponent,
-    FooterComponent,
-    HeaderComponent,
-    AboutPageComponent,
-    ProjectsPageComponent,
-    ProjectCardComponent,
-    ExperiencesPageComponent
-  ],
+  declarations: [AppComponent],
+  providers: [],
+  bootstrap: [AppComponent],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    HttpClientModule,
+    ExperiencesPageModule,
+    AboutPageModule,
+    ProjectsPageModule,
+    HomeModule,
+    HeaderModule,
+    FooterModule,
+    AppRoutingModule,
   ],
-  providers: [],
-  bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

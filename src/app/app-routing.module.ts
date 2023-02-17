@@ -1,10 +1,10 @@
-import { ExperiencesPageComponent } from './experiences-page/experiences-page.component';
-import { AboutPageComponent } from './about-page/about-page.component';
+
 import { RouterModule, Routes } from '@angular/router';
 
-import { ProjectsPageComponent } from './projects-page/projects-page.component';
-import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
+import { AboutPageComponent } from './pages/about-page/about-page.component';
+import { ExperiencesPageComponent } from './pages/experiences-page/experiences-page.component';
+import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
 
 const routes: Routes = [
   {path: 'projects', component: ProjectsPageComponent, title: 'Douglas Portfolio - My Projects'},
