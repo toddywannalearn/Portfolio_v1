@@ -1,34 +1,29 @@
 import { Injectable } from '@angular/core';
 
-
 export interface IRepository {
-  title: string,
-  description: string,
-  imgPath: string,
-  repoLink: string,
-  tags: string[],
+  title: string;
+  description: string;
+  imgPath: string;
+  repoLink: string;
+  tags: string[];
 }
 
 @Injectable({
-  providedIn: 'root'
+    providedIn: 'root',
 })
 export class ProjectsService {
+    repositoriesList: IRepository[] = [];
 
-  repositoriesList: IRepository[] = [];
+    constructor() {}
 
-  constructor() { }
+    setList(repositories: IRepository[]) {
+        this.repositoriesList = repositories;
+    }
 
-  setList(repositories: IRepository[]) {
-    this.repositoriesList = repositories;
-  }
-
-  get getlist (): IRepository[] {
-    return this.repositoriesList;
-  }
-
-
+    get getlist(): IRepository[] {
+        return this.repositoriesList;
+    }
 }
-
 
 // {
 //   [

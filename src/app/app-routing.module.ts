@@ -1,19 +1,37 @@
-
+import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 
-import { NgModule } from '@angular/core';
-import { AboutPageComponent } from './pages/about-page/about-page.component';
-import { ExperiencesPageComponent } from './pages/experiences-page/experiences-page.component';
-import { ProjectsPageComponent } from './pages/projects-page/projects-page.component';
-
 const routes: Routes = [
-  {path: 'projects', component: ProjectsPageComponent, title: 'Douglas Portfolio - My Projects'},
-  {path: 'experiences', component: ExperiencesPageComponent, title: 'Douglas Portfolio - My Experiences'},
-  {path: '', component: AboutPageComponent, title: 'Douglas Portfolio - About me'}
+    {
+        path: '',
+        redirectTo: 'about',
+        pathMatch: 'full',
+    },
+    {
+        path: 'about',
+        loadChildren: () =>
+            import('./pages/about-page/about-page.module').then(
+                (m) => m.AboutPageModule
+            ),
+    },
+    {
+        path: 'experiences',
+        loadChildren: () =>
+            import('./pages/experiences-page/experiences-page.module').then(
+                (m) => m.ExperiencesPageModule
+            ),
+    },
+    {
+        path: 'projects',
+        loadChildren: () =>
+            import('./pages/projects-page/projects-page.module').then(
+                (m) => m.ProjectsPageModule
+            ),
+    },
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+    imports: [RouterModule.forRoot(routes)],
+    exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}

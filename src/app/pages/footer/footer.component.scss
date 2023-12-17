@@ -1,4 +1,4 @@
-@import 'src/variables';
+@import "src/variables";
 
 $footer-background-color: #404040;
 
@@ -32,10 +32,10 @@ $footer-background-color: #404040;
 }
 
 .column-logo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: auto;
 }
 
 .footer__logo {
@@ -131,10 +131,9 @@ $footer-background-color: #404040;
     &:hover {
       cursor: pointer;
     }
-  
+
     &:active {
       fill: $color-gray08;
     }
   }
-  
 }

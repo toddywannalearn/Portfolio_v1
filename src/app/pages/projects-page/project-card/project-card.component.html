@@ -1,24 +1,22 @@
 <div class="project-card">
-    <div class="column1">
-      <div>
-        <h2>{{ title }}</h2>
-        <p>
-          {{ description }}
-        </p>
+  <div class="column1">
+    <div>
+      <h2>{{ title }}</h2>
+      <p>
+        {{ description }}
+      </p>
 
-        <button (click)="goToRepo()">Github</button>
-      </div>
+      <button (click)="goToRepo()">Github</button>
     </div>
+  </div>
 
-    <div class="column2">
-      <img
-        class="project-cover"
-        src="{{ imgPath }}"
-        alt="portfolio v1 preview"
-      />
+  <div class="column2">
+    <img class="project-cover" src="{{ imgPath }}" alt="portfolio v1 preview" />
 
-      <ul class="chips-list">
-        <li *ngFor="let tag of tags"><span class="chip">{{ tag }}</span></li>
-      </ul>
-    </div>
+    <ul class="chips-list">
+      <li *ngFor="let tag of tags">
+        <span class="chip">{{ tag }}</span>
+      </li>
+    </ul>
+  </div>
 </div>

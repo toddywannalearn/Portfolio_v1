@@ -27,7 +27,7 @@ header {
       background-clip: text;
       background-image: $highlight-color-purple1;
       -webkit-text-fill-color: transparent;
-  }
+    }
   }
 
   p {
@@ -51,31 +51,28 @@ p {
 }
 
 .list-intro {
-    margin-bottom: 122px
+  margin-bottom: 122px;
 }
 
-
 .list-back {
-    background-color: $color-gray10;
-    width: max-content;
-    height: 1240px;
-    margin-left: 60px;
-    border-radius: 5px;
+  background-color: $color-gray10;
+  width: max-content;
+  height: 1240px;
+  margin-left: 60px;
+  border-radius: 5px;
 }
 
 .projects-list {
-    @extend .column;
-    gap: 26px;
-    position: relative;
-    left: -60px;
-    top: -40px;
-    list-style-type: none;
+  @extend .column;
+  gap: 26px;
+  position: relative;
+  left: -60px;
+  top: -40px;
+  list-style-type: none;
 
-    li{
-      animation: fromRightToLeft 0.7s 0.2s backwards;
-    }
-
-   
+  li {
+    animation: fromRightToLeft 0.7s 0.2s backwards;
+  }
 }
 
 @for $i from 1 through 5 {

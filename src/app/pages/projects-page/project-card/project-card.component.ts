@@ -1,32 +1,29 @@
 import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-project-card',
-  templateUrl: './project-card.component.html',
-  styleUrls: ['./project-card.component.scss']
+    selector: 'app-project-card',
+    templateUrl: './project-card.component.html',
+    styleUrls: ['./project-card.component.scss'],
 })
 export class ProjectCardComponent {
-
+  @Input()
+      title: string = '';
 
   @Input()
-  title: string = '';
+      description: string = '';
 
   @Input()
-  description: string = '';
+      imgPath: string = '';
 
   @Input()
-  imgPath: string = '';
+      tags: string[] = [];
 
   @Input()
-  tags: string[] = [];
+      repoLink: string = '';
 
-  @Input()
-  repoLink: string = '';
-
-  constructor() { }
+  constructor() {}
 
   goToRepo(): void {
-    window.open(this.repoLink);
+      window.open(this.repoLink);
   }
-
 }

@@ -1,116 +1,115 @@
-@import 'src/variables';
-
+@import "src/variables";
 
 p {
-    max-width: 382px;
-    font-family: $content-font-family;
-    font-weight: 400;
-    font-size: 24px;
-    font-style: normal;
-    line-height: 31.68px;
-    color: #000000;
-  }
-  
+  max-width: 382px;
+  font-family: $content-font-family;
+  font-weight: 400;
+  font-size: 24px;
+  font-style: normal;
+  line-height: 31.68px;
+  color: #000000;
+}
+
 .project-card {
-    @extend .row;
-    width: 1235px;
-    height: 396px;
-    border-radius: 5px;
-    background-color: $color-gray09;
-    padding-top: 30px;
+  @extend .row;
+  width: 1235px;
+  height: 396px;
+  border-radius: 5px;
+  background-color: $color-gray09;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 42px;
+  padding-bottom: 42px;
+
+  .column2 {
+    @extend .column;
+  }
+  h2 {
+    font-family: $title-font-family;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 26px;
+    color: $color-gray01;
+  }
+
+  p {
+    max-width: 664px;
+    color: $color-gray04;
+    font-weight: 300;
+    margin-top: 20px;
+  }
+
+  button {
+    margin-top: 41px;
+    margin-left: 16px;
+    width: 132px;
+    height: 52px;
     padding-left: 30px;
-    padding-right: 42px;
-    padding-bottom: 42px;
-  
-    .column2 {
-      @extend .column;
+    padding-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: $color-gray10;
+    color: $color-gray04;
+    font-family: $content-font-family;
+    font-size: 24px;
+    font-weight: 400;
+    border: 1px solid #f00bcc;
+    border-radius: 3px;
+
+    &:hover {
+      // background-color: $color-gray08;
+      cursor: pointer;
     }
-    h2 {
-      font-family: $title-font-family;
-      font-style: normal;
-      font-weight: 400;
-      font-size: 20px;
-      line-height: 26px;
-      color: $color-gray01;
-    }
-  
-    p {
-      max-width: 664px;
-      color: $color-gray04;
-      font-weight: 300;
-      margin-top: 20px;
-    }
-  
-    button {
-      margin-top: 41px;
-      margin-left: 16px;
-      width: 132px;
-      height: 52px;
-      padding-left: 30px;
-      padding-right: 30px;
-      padding-top: 10px;
-      padding-bottom: 10px;
-  
-      background-color: $color-gray10;
-      color: $color-gray04;
-      font-family: $content-font-family;
-      font-size: 24px;
-      font-weight: 400;
-      border: 1px solid #f00bcc;
-      border-radius: 3px;
-  
-      &:hover {
-        // background-color: $color-gray08;
-        cursor: pointer;
-      }
-  
-      &:active {
-        background-color: $color-gray08;
-      }
-    }
-  
-    .column2 {
-      @extend .column;
-      margin-left: 46px;
-    }
-  
-    img {
-      width: 440px;
-      height: 243px;
-      border-radius: 5px;
-      margin-bottom: 17px;
-    }
-  
-    .chips-list {
-      @extend .row;
-      max-width: 320px;
-      gap: 15px;
-      flex-wrap: wrap;
-      list-style-type: none;
-  
-      .chip {
-        background-color: $color-gray06;
-        color: $color-gray10;
-        border-radius: 5px;
-        padding-left: 10px;
-        padding-right: 10px;
-        padding-top: 5px;
-        padding-bottom: 5px;
-  
-        font-family: $content-font-family;
-        font-size: 12px;
-        line-height: 15.84px;
-        font-weight: 400;
-      }
+
+    &:active {
+      background-color: $color-gray08;
     }
   }
 
-  .row {
-    display: flex;
-    flex-direction: row;
+  .column2 {
+    @extend .column;
+    margin-left: 46px;
   }
-  
-  .column {
-    display: flex;
-    flex-direction: column;
+
+  img {
+    width: 440px;
+    height: 243px;
+    border-radius: 5px;
+    margin-bottom: 17px;
   }
+
+  .chips-list {
+    @extend .row;
+    max-width: 320px;
+    gap: 15px;
+    flex-wrap: wrap;
+    list-style-type: none;
+
+    .chip {
+      background-color: $color-gray06;
+      color: $color-gray10;
+      border-radius: 5px;
+      padding-left: 10px;
+      padding-right: 10px;
+      padding-top: 5px;
+      padding-bottom: 5px;
+
+      font-family: $content-font-family;
+      font-size: 12px;
+      line-height: 15.84px;
+      font-weight: 400;
+    }
+  }
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.column {
+  display: flex;
+  flex-direction: column;
+}
